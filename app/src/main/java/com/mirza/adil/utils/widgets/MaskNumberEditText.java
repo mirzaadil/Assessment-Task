@@ -18,6 +18,7 @@ import android.util.Log;
 
 import androidx.annotation.CallSuper;
 
+
 import com.mirza.adil.R;
 
 import java.util.ArrayList;
@@ -25,11 +26,10 @@ import java.util.List;
 
 
 /**
- * This is Custom currency formatter class.
- *
- * @author Mirza Adil
- * @version 1.0
+ *  This is Custom currency formatter class.
+ * @author  Mirza Adil
  * @email mirza.madil@gmail.com
+ * @version 1.0
  * @since 14 Jul 2021
  */
 public class MaskNumberEditText extends ClearEditText {
@@ -539,8 +539,7 @@ public class MaskNumberEditText extends ClearEditText {
         }
     }
 
-    private interface IPlaceholderSpan {
-    }
+    private interface IPlaceholderSpan {}
 
     private static class DecimalPointSpan extends ForegroundColorSpan {
         private final int mColor;
@@ -558,8 +557,7 @@ public class MaskNumberEditText extends ClearEditText {
         }
     }
 
-    private static class ThousandsSeparatorSpan implements IPlaceholderSpan {
-    }
+    private static class ThousandsSeparatorSpan implements IPlaceholderSpan {}
 
     private static class ZeroIntegerSpan extends ForegroundColorSpan implements IPlaceholderSpan {
         private final int mColor;
