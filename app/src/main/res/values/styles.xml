@@ -1,4 +1,6 @@
 <resources>
+
+    <!--    Custom Currency formatter style-->
     <declare-styleable name="ClearEditText">
         <attr name="fet_clearDrawable" format="reference" />
         <attr name="fet_drawablePadding" format="dimension" />
@@ -33,4 +35,14 @@
         <attr name="fet_autoFillNumbersTextColor" format="color" />
         <attr name="fet_maxNumberValue" format="string" />
     </declare-styleable>
+
+    <!--Custom Transaction Screen button-->
+    <style name="ButtonTransactionScreen">
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:layout_height">@dimen/_50sdp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+        <item name="android:background">@drawable/bg_round_selector</item>
+        <item name="android:textColor">@drawable/bg_text_color</item>
+    </style>
 </resources>
