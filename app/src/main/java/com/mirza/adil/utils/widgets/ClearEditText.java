@@ -13,6 +13,8 @@ import android.view.ViewConfiguration;
 
 import androidx.appcompat.widget.AppCompatEditText;
 
+import com.mirza.adil.R;
+
 
 /**
  * The class ClearEditText
@@ -259,6 +261,6 @@ public class ClearEditText extends AppCompatEditText {
     }
 
     public interface OnClearClickListener {
-        boolean onClearClick(com.mna.testdemo.wapper.ClearEditText editText, Drawable drawable);
+        boolean onClearClick(ClearEditText editText, Drawable drawable);
     }
 }
