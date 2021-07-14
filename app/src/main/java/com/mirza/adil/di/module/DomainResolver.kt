@@ -10,17 +10,16 @@ import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 
-
-/*
-* The class DomainResolver
-*
-* @author  Mirza Adil
-* @email mirza.adil@gmail.com
-* @version 1.0
-* @since 14 Jul 2021
-*
-* This class is used to transforms hard android framework dependencies to android free logic objects
-*/
+/**
+ * The class DomainResolver
+ *
+ * @author  Mirza Adil
+ * @email mirza.madil@gmail.com
+ * @version 1.0
+ * @since 14 Jul 2021
+ *
+ * This class is used to transforms hard android framework dependencies to android free logic objects
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class DomainResolver {

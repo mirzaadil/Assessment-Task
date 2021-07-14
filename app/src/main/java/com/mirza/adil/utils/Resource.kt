@@ -1,16 +1,16 @@
 package com.mirza.adil.utils
 
 
-/*
-* The class Resource
-*
-* @author  Mirza Adil
-* @email mirza.adil@gmail.com
-* @version 1.0
-* @since 14 Jul 2021
-*
-* This class is generic data class use to handle response, message and status in success, loading or error case.
-*/
+/**
+ * The class Resource
+ *
+ * @author  Mirza Adil
+ * @email mirza.madil@gmail.com
+ * @version 1.0
+ * @since 14 Jul 2021
+ *
+ * This class is generic data class use to handle response, message and status in success, loading or error case.
+ */
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
 
     companion object {

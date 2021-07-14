@@ -1,7 +1,6 @@
 package com.mirza.adil.di.module
 
 
-
 import com.mirza.adil.BuildConfig
 import com.mirza.adil.data.remote.AssessmentService
 import com.mirza.adil.utils.BASE_URL
@@ -16,19 +15,19 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-/*
-* The class ApplicationModule
-*
-* @author  Mirza Adil
-* @email mirza.adil@gmail.com
-* @version 1.0
-* @since 14 Jul 2021
-*
-* This class is used to create the modules which we can access at application level.
-*/
+/**
+ * The class ApplicationModule
+ *
+ * @author  Mirza Adil
+ * @email mirza.adil@gmail.com
+ * @version 1.0
+ * @since 14 Jul 2021
+ *
+ * This class is used to create the modules which we can access at application level.
+ */
 @Module
 @InstallIn(SingletonComponent::class)
- class ApplicationModule {
+class ApplicationModule {
     @Provides
     fun provideBaseUrl() = BASE_URL
 
@@ -60,7 +59,8 @@ import javax.inject.Singleton
 
     @Provides
     @Singleton
-    fun provideApiService(retrofit: Retrofit): AssessmentService = retrofit.create(AssessmentService::class.java)
+    fun provideApiService(retrofit: Retrofit): AssessmentService =
+        retrofit.create(AssessmentService::class.java)
 
 
 }

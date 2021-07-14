@@ -5,16 +5,17 @@ import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-/*
-* The class SpacesItemDecorator
-*
-* @author  Mirza Adil
-* @email mirza.adil@gmail.com
-* @version 1.0
-* @since 14 Jul 2021
-*
-* This class used to set the padding between the views of the recyclerview single item
-*/
+
+/**
+ * The class SpacesItemDecorator
+ *
+ * @author  Mirza Adil
+ * @email mirza.madil@gmail.com
+ * @version 1.0
+ * @since 14 Jul 2021
+ *
+ * This class used to set the padding between the views of the recyclerview single item
+ */
 class SpacesItemDecorator(space: Int) : RecyclerView.ItemDecoration() {
 
     private val space: Int = space.dp

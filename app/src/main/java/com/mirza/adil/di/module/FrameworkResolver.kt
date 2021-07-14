@@ -1,5 +1,3 @@
-
-
 package com.mirza.adil.di.module
 
 import android.content.Context
@@ -12,16 +10,17 @@ import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 
-/*
-* The class FrameworkResolver
-*
-* @author  Mirza Adil
-* @email mirza.adil@gmail.com
-* @version 1.0
-* @since 14 Jul 2021
-*
-* This class is used to resolve all the hard android framework dependent objects
-*/
+/**
+ * The class FrameworkResolver
+ *
+ * @author  Mirza Adil
+ * @email mirza.madil@gmail.com
+ * @version 1.0
+ * @since 14 Jul 2021
+ *
+ * This class is used to resolve all the hard android framework dependent objects
+ */
+
 @Module
 @InstallIn(SingletonComponent::class)
 object FrameworkResolver {

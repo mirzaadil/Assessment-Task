@@ -7,16 +7,17 @@ import android.os.Build
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
-/*
-* The class NewsDetailFragment
-*
-* @author  Mirza Adil
-* @email mirza.adil@gmail.com
-* @version 1.0
-* @since 14 Jul 2021
-*
-* This class is used to check the network connectivity
-*/
+
+/**
+ * The class NetworkHelper to communicate with APIs engine.
+ *
+ * @author  Mirza Adil
+ * @email mirza.madil@gmail.com
+ * @version 1.0
+ * @since 14 Jul 2021
+ *
+ * This class is used to check the network connectivity
+ */
 @Singleton
 class NetworkHelper @Inject constructor(@ApplicationContext private val context: Context) {
 

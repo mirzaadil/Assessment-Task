@@ -11,19 +11,19 @@ import com.mirza.adil.utils.UI_MODE_PREF
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-/*
-* The class PrefsDataStore
-*
-* @author  Mirza Adil
-* @email mirza.adil@gmail.com
-* @version 1.0
-* @since 14 Jul 2021
-*
-*
-* PrefsDataStore abstract class is used to create the data store preferences, JetPack @DataStore is the replacement of the SharedPreferences
-* as it follows the observable pattern, moreover we could save/retrieve data in background thread.
-* @see this https://developer.android.com/topic/libraries/architecture/datastore?gclsrc=ds&gclsrc=ds&gclid=CLCjpfHere8CFVc_GwodJl8L-A link for more details
-*/
+/**
+ * The class PrefsDataStore
+ *
+ * @author  Mirza Adil
+ * @email mirza.madil@gmail.com
+ * @version 1.0
+ * @since 14 Jul 2021
+ *
+ *
+ * PrefsDataStore abstract class is used to create the data store preferences, JetPack @DataStore is the replacement of the SharedPreferences
+ * as it follows the observable pattern, moreover we could save/retrieve data in background thread.
+ * @see this https://developer.android.com/topic/libraries/architecture/datastore?gclsrc=ds&gclsrc=ds&gclid=CLCjpfHere8CFVc_GwodJl8L-A link for more details
+ */
 abstract class PrefsDataStore(context: Context, fileName: String) {
 
     protected val dataStore: DataStore<Preferences> = context.createDataStore(name = fileName)
