@@ -31,6 +31,7 @@ class TransactionScreenFragment : BaseFragment<FragmentTransactionScreenBinding>
 
     private fun setup() = with(binding) {
         visibleToolbar()
+        etPassCodeText.isFocusable=false
         clickListenerButton()
 
     }
