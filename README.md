@@ -58,4 +58,15 @@ and repository.
 
 # Screenshots:
 
+
+![UI specifications](https://i.ibb.co/XYCmXwt/screen-1.png)
 ![UI specifications](https://i.ibb.co/YdHQw4L/sceen-2.png)
+![UI specifications](https://i.ibb.co/nQZXdt6/screen-3.png)
+
+# Final Note
+You can write to me on this email mirza.madil@gmail.com if you have any suggestion
+related to architecture and clean code practices.
+
+# Auther
+Mirza Adil
+
