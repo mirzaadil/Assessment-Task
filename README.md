@@ -58,4 +58,4 @@ and repository.
 
 # Screenshots:
 
-![UI specifications](https://https://ibb.co/gWk9hbR)
+![UI specifications](https://i.ibb.co/YdHQw4L/sceen-2.png)
