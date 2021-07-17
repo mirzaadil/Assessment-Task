@@ -8,7 +8,8 @@ import com.mirza.adil.utils.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
+import dagger.hilt.android.components.ApplicationComponent
+
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -26,7 +27,7 @@ import javax.inject.Singleton
  * This class is used to create the modules which we can access at application level.
  */
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(ApplicationComponent::class)
 class ApplicationModule {
     @Provides
     fun provideBaseUrl() = BASE_URL

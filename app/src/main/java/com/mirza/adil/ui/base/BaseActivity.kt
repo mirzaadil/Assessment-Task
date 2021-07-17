@@ -43,4 +43,5 @@ class BaseActivity : AppCompatActivity() {
         return super.onSupportNavigateUp()
     }
 
+
 }

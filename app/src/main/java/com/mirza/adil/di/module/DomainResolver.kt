@@ -6,7 +6,8 @@ import com.mirza.adil.data.local.datastore.UIModeReadStore
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
+import dagger.hilt.android.components.ApplicationComponent
+
 import javax.inject.Singleton
 
 
@@ -21,7 +22,7 @@ import javax.inject.Singleton
  * This class is used to transforms hard android framework dependencies to android free logic objects
  */
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(ApplicationComponent::class)
 abstract class DomainResolver {
 
     @Binds

@@ -17,12 +17,15 @@ import android.util.AttributeSet;
 import android.util.Log;
 
 import androidx.annotation.CallSuper;
+import androidx.annotation.VisibleForTesting;
 
 
 import com.mirza.adil.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static androidx.annotation.VisibleForTesting.PRIVATE;
 
 
 /**
@@ -43,12 +46,16 @@ public class MaskNumberEditText extends ClearEditText {
     private static final char ZERO_PLACEHOLDER_CHAR = ZERO_PLACEHOLDER.charAt(0);
     private boolean mIsFormatted = false;
     private List<TextWatcher> mWatchers;
+    @VisibleForTesting(otherwise = PRIVATE)
     private MaskNumberTextWatcher mTextWatcher;
     private boolean mRestoring = false;
     private boolean mFilterRestoreTextChangeEvent = false;
+    @VisibleForTesting(otherwise = PRIVATE)
     private String mCurrencySymbol;
     private int mCurrencySymbolTextColor = -1;
+    @VisibleForTesting(otherwise = PRIVATE)
     private int mDecimalLength = -1;
+    @VisibleForTesting(otherwise = PRIVATE)
     private double mMaxNumberValue = -1;
     private boolean mAutoFillNumbers = false;
     private int mAutoFillNumbersTextColor = -1;
@@ -454,6 +461,7 @@ public class MaskNumberEditText extends ClearEditText {
                     Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
     }
+
 
     private boolean formatDecimal(Editable editable, int decimalPointIndex) {
         boolean havingDecimal = false;

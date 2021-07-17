@@ -30,9 +30,10 @@ class TransactionScreenFragment : BaseFragment<FragmentTransactionScreenBinding>
 
 
     private fun setup() = with(binding) {
-        visibleToolbar()
+//        visibleToolbar()
         etPassCodeText.isFocusable=false
         clickListenerButton()
+        observeMoneyValue()
 
     }
 
@@ -81,11 +82,15 @@ class TransactionScreenFragment : BaseFragment<FragmentTransactionScreenBinding>
                 val valueDot = buttonDot.text.toString()
                 moneyEdit.value = valueDot } }
 
+
+    }
+
+    private fun observeMoneyValue(){
         this@TransactionScreenFragment.activity?.let {
-            moneyRead.observe(it, {
+            moneyRead.observe(it, {money->
                 if (updatedValue.restrictTwoDots()){
-                    updatedValue.append(it) }
-                etPassCodeText.setText(updatedValue, TextView.BufferType.EDITABLE)
+                    updatedValue.append(money) }
+                binding.etPassCodeText.setText(updatedValue, TextView.BufferType.EDITABLE)
             })
 
         }
@@ -95,10 +100,10 @@ class TransactionScreenFragment : BaseFragment<FragmentTransactionScreenBinding>
     /**
      * This function manage application Toolbar
      */
-    private fun visibleToolbar() {
-        if ((activity as BaseActivity).binding.toolbar.visibility == View.GONE) (activity as BaseActivity).binding.toolbar.visibility =
-            View.VISIBLE
-    }
+//    private fun visibleToolbar() {
+//        if ((activity as BaseActivity).binding.toolbar.visibility == View.GONE) (activity as BaseActivity).binding.toolbar.visibility =
+//            View.VISIBLE
+//    }
 
 
     private fun StringBuilder.restrictTwoDots(): Boolean {

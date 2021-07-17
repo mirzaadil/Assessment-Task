@@ -37,18 +37,18 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/etPassCodeText">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button1"
             style="@style/ButtonTransactionScreen"
             android:layout_marginStart="20dp"
             android:text="@string/one" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button2"
             style="@style/ButtonTransactionScreen"
             android:text="@string/two" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button3"
             style="@style/ButtonTransactionScreen"
             android:text="@string/three" />
@@ -63,18 +63,18 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/llPasscodeFirstRow">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button4"
             style="@style/ButtonTransactionScreen"
             android:layout_marginStart="20dp"
             android:text="@string/four" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button5"
             style="@style/ButtonTransactionScreen"
             android:text="@string/five" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button6"
             style="@style/ButtonTransactionScreen"
             android:text="@string/six" />
@@ -89,24 +89,25 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/llPasscodeSecondRow">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button7"
             style="@style/ButtonTransactionScreen"
             android:layout_marginStart="20dp"
             android:text="@string/seven" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button8"
             style="@style/ButtonTransactionScreen"
             android:text="@string/eight" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button9"
             style="@style/ButtonTransactionScreen"
             android:text="@string/nine" />
     </LinearLayout>
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -114,20 +115,20 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/llPasscodeThirdRow">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/buttonDot"
             style="@style/ButtonTransactionScreen"
             android:layout_marginStart="20dp"
             android:text="@string/dot"
-            android:textColor="@drawable/bg_text_color"
+            android:textColor="@color/colorPrimary"
             android:textSize="@dimen/text_size_h5" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/button0"
             style="@style/ButtonTransactionScreen"
             android:text="@string/zero" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/buttonRemove"
             style="@style/ButtonTransactionScreen"
             android:text="@string/cross" />
